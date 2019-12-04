@@ -1,13 +1,52 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700&display=swap');
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: calc(50% - 270px);
+  justify-content: space-around;
+  height: 50vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+button {
+  border-radius: 50%;
+  background-color: darkgreen;
+  color: greenyellow;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  font-family: 'Exo', sans-serif;
+  border: 0;
+  margin: 10px 0;
+}
+
+.App > .calcBtns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.App > .input {
+  font-weight: 700;
+  font-size: 30px;
+  font-family: 'Exo', sans-serif;
+  width: 50%;
+  text-align: right;
+}
+
+.App > .calcBtns > .IntButtons {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 25% 25% 25% 25%;
+  width: 50%;
+}
+
+.App > .calcBtns > .IntButtons > button {
+  margin-left: calc(50% - 25px);
+}
+
+.App > .calcBtns > .MathBtns {
+  display: flex;
+  flex-direction: column;
 }
